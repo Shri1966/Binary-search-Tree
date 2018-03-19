@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+
+struct node
+{
+	int data;
+	node *parent;
+	node *left; 
+	node *right;
+	node(){ parent= left =right=NULL;}
+};
+class Btree
+{
+	private:
+node *root,*parent,*left,*right;
+public:
+Btree()
+{
+root = NULL;
+parent=left=right = NULL;
+}
+};
+void insert (int val)
+{
+ node *temp = new node;
+	temp->data=val;
+	temp->left=NULL;
+	temp->right=NULL;
+	
+	while(temp!=NULL)
+	if(val<temp->data)
+	{
+	temp=temp->left;
+	
+	}
+	else 
+{	temp=temp->right;
+}
+}
+int main()
+{
+int a, b, c;
+class Btree *root= NULL;
+insert (a);
+insert (b);
+insert (c);
+return 0;
+}
