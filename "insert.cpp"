@@ -75,7 +75,7 @@ void deletenode(int k, node* val)
   node* temp=root;
   if(val==NULL)
   {
-    cout<<"\n \n here is no element";
+    cout<<"\nhere is no element";
     return;
   }
   
@@ -128,11 +128,8 @@ void deletenode(int k, node* val)
      part->right=NULL;
      val->data=maxleft->data;
    }
-   else
-   {
-     if(maxleft->left)
-   
-  };
+
+}
 }
 
 
